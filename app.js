@@ -2,11 +2,11 @@ const generateForm = document.querySelector(".generate-form");
 const generateBtn = generateForm.querySelector(".generate-btn");
 const imageGallery = document.querySelector(".image-gallery");
 
-import { config } from "dotenv";
-config();
+// import { config } from "dotenv";
+// config();
 
-const { OPENAI_KEY } = process.env;
-const OPENAI_API_KEY = `${OPENAI_KEY}`;
+// console.log(process.env);
+const OPENAI_API_KEY = `${process.env.OPENAI_KEY}`;
 let isImageGenerating = false;
 
 //function to update image cards with generated images
